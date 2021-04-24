@@ -1,3 +1,10 @@
+function principal_validation() 
+{
+  var principal = document.getElementById("principal").value;
+  if (principal <= "0") 
+    {alert("Enter a positive number");}
+} 
+
 function compute()
 {
     var principal = document.getElementById("principal").value;
@@ -10,5 +17,5 @@ function compute()
 function updateRate() 
 {
     var rateval = document.getElementById("rate").value;
-        document.getElementById("rate_val").innerText=rateval;
-}   
+    document.getElementById("rate_val").innerText=rateval;
+}
