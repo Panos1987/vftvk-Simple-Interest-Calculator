@@ -1,8 +1,6 @@
 var p = document.getElementById("principal").value;
 var r = document.getElementById("rate").value;
 var ys = document.getElementById("years").value;
-var i = p * ys * r /100; document.getElementById("result").innerHTML=i;
-var y = new Date().getFullYear()+parseInt(years);
 
 function p_validation() 
 {
@@ -22,6 +20,10 @@ function updateRate()
 
 function compute()
 {
-    var a = document.getElementById("answer").innerHTML = "If you deposit " + p + " at an interest rate of " + r + "%, you will receive an amount of interest " + i + " in the year " + ys + ".";
+  var i = p * ys * r /100; 
+  document.getElementById("result").innerHTML=i;
+  var y = new Date().getFullYear()+parseInt(ys);
+  return p, r, i, y
+  var a = document.getElementById("answer").innerHTML = "If you deposit " + p + " at an interest rate of " + r + "%, you will receive an amount of interest " + i + " in the year " + y + ".";
 }
 
