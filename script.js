@@ -1,9 +1,6 @@
-var p = document.getElementById("principal").value;
-var r = document.getElementById("rate").value;
-var ys = document.getElementById("years").value;
-
 function p_validation() 
 {
+  var p = document.getElementById("principal").value;
   if (p <= "0") 
   {
       alert("Enter a positive number.");
@@ -20,10 +17,12 @@ function updateRate()
 
 function compute()
 {
+  var p = document.getElementById("principal").value;
+  var r = document.getElementById("rate").value;
+  var ys = document.getElementById("years").value;
   var i = p * ys * r /100; 
   document.getElementById("result").innerHTML=i;
   var y = new Date().getFullYear()+parseInt(ys);
-  return p, r, i, y
   var a = document.getElementById("answer").innerHTML = "If you deposit " + p + " at an interest rate of " + r + "%, you will receive an amount of interest " + i + " in the year " + y + ".";
 }
 
