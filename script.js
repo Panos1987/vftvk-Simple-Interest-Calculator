@@ -24,6 +24,6 @@ function output_result()
 
 function compute()
 {
-    display = "If you deposit " + principal + " at an interest rate of " + rate + ", you will receive an amount of interest " + interest + " in the year " + year + ".";
+    document.innerHTML = "If you deposit " + principal + " at an interest rate of " + rate + ", you will receive an amount of interest " + interest + " in the year " + year + ".";
 }
 
