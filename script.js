@@ -16,6 +16,7 @@ function output_result()
 {
     var interest = principal * years * rate /100;
     document.getElementById("result").innerText=interest;
+    return interest;
 }
 
 function compute()
