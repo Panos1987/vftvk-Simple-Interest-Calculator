@@ -6,6 +6,19 @@ function principal_validation()
      ("principal").focus()}
 } 
 
+function updateRate() 
+{
+    var rateval = document.getElementById("rate").value;
+    document.getElementById("rate_val").innerText=rateval;
+}
+
+function output_result()
+{
+    var interest = principal * years * rate /100;
+    document.getElementById("result").innerText=interest;
+    return interest;
+}
+
 function compute()
 {
     var principal = document.getElementById("principal").value;
@@ -15,8 +28,4 @@ function compute()
     var year = new Date().getFullYear()+parseInt(years);
 }
 
-function updateRate() 
-{
-    var rateval = document.getElementById("rate").value;
-    document.getElementById("rate_val").innerText=rateval;
-}
+
