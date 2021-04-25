@@ -23,6 +23,6 @@ function compute()
   var i = p * ys * r /100; 
   document.getElementById("result").innerHTML=i;
   var y = new Date().getFullYear()+parseInt(ys);
-  var a = document.getElementById("answer").innerHTML = "If you deposit " + p + " at an interest rate of " + r + "%, you will receive an amount of interest " + i + " in the year " + y + ".";
+  var a = document.getElementById("answer").innerHTML = "If you deposit " + p + "<span class='highlight'>" + " at an interest rate of " + r + "<span class='highlight'>" + "%, you will receive an amount of interest " + i +"<span class='highlight'>" + " in the year " + y + "<span class='highlight'>" + ".";
 }
 
