@@ -8,22 +8,22 @@ function principal_validation()
 {
   if (principal <= "0") 
      {alert("Enter a positive number");
-     ("principal").focus()}
-} 
+     ("principal").focus()};
+}; 
 
 function updateRate() 
 {
     var rateval = document.getElementById("rate").value;
     document.getElementById("rate_val").innerText=rateval;
-}
+};
 
 function output_result()
 {
     return interest;
-}
+};
 
 function compute()
 {
     document.innerHTML = "If you deposit " + principal + " at an interest rate of " + rate + ", you will receive an amount of interest " + interest + " in the year " + year + ".";
-}
+};
 
