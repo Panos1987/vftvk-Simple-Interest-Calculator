@@ -1,14 +1,3 @@
-function p_validation() 
-{
-  var p = document.getElementById("principal").value;
-  if (p <= "0") 
-  {
-      alert("Enter a positive number.");
-      ("principal").focus();
-      return (false);
-  }
-} 
-
 function updateRate() 
 {
     var rv = document.getElementById("rate").value;
@@ -26,3 +15,13 @@ function compute()
   var a = document.getElementById("answer").innerHTML = "If you deposit " + "<span class='highlight'>" + p + "</span>" + " at an interest rate of " + "<span class='highlight'>" + r + "</span>" + "%, you will receive an amount of interest " + "<span class='highlight'>" + i +"</span>" + " in the year " + "<span class='highlight'>" + y + "</span>" + ".";
 }
 
+function p_validation() 
+{
+  var p = document.getElementById("principal").value;
+  if (p <= "0") 
+  {
+      alert("Enter a positive number.");
+      ("principal").focus();
+      return (false);
+  }
+} 
