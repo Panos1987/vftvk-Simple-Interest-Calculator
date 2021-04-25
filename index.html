@@ -9,7 +9,7 @@
         <body>
             <h1>Simple Interest Calculator</h1> <br/><br>
 
-                Amount <input type="number"  id="principal"> <br/><br>
+                Amount <input type="number"  id="principal" onfocus="p_validation()"> <br/><br>
                 Rate <input type="range" id="rate" min="1" 
                       max="20" step="0.25" value="10.25" 
                       onchange="updateRate()">
