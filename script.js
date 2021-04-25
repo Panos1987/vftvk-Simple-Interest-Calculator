@@ -20,6 +20,6 @@ function updateRate()
 
 function compute()
 {
-    var answer = document.getElementById("answer").innerHTML = "If you deposit " + principal + " at an interest rate of " + rate + ", you will receive an amount of interest " + interest + " in the year " + year + ".";
+    var answer = document.getElementById("answer").innerHTML = "If you deposit " + var principal + " at an interest rate of " + rate + ", you will receive an amount of interest " + interest + " in the year " + year + ".";
 }
 
