@@ -1,7 +1,7 @@
 var principal = document.getElementById("principal").value;
 var rate = document.getElementById("rate").value;
 var years = document.getElementById("years").value;
-var interest = principal * years * rate /100; document.getElementById("result").innerText=interest;
+var interest = principal * years * rate /100; document.getElementById("result").innerHTML=interest;
 var year = new Date().getFullYear()+parseInt(years);
 
 function principal_validation() 
