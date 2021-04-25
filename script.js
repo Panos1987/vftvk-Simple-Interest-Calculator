@@ -4,11 +4,13 @@ var ys = document.getElementById("years").value;
 var i = principal * years * rate /100; document.getElementById("result").innerHTML=i;
 var y = new Date().getFullYear()+parseInt(years);
 
-function principal_validation() 
+function p_validation() 
 {
-  if (p <= "0") {
-      alert("Enter a positive number");
-      ("principal").focus()
+  if (p <= "0") 
+  {
+      alert("Enter a positive number.");
+      ("principal").focus();
+      return (false);
   }
 } 
 
