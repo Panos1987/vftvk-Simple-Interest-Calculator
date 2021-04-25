@@ -1,8 +1,8 @@
-var p = document.getElementById("principal").value;
-var r = document.getElementById("rate").value;
-var ys = document.getElementById("years").value;
-var i = p * ys * r /100; document.getElementById("result").innerHTML=i;
-var y = new Date().getFullYear()+parseInt(years);
+p = document.getElementById("principal").value;
+r = document.getElementById("rate").value;
+ys = document.getElementById("years").value;
+i = p * ys * r /100; document.getElementById("result").innerHTML=i;
+y = new Date().getFullYear()+parseInt(years);
 
 function p_validation() 
 {
@@ -16,12 +16,12 @@ function p_validation()
 
 function updateRate() 
 {
-    var rv = document.getElementById("rate").value;
+    rv = document.getElementById("rate").value;
     document.getElementById("rate_val").innerText=rv;
 }
 
 function compute()
 {
-    var a = document.getElementById("answer").innerHTML = "If you deposit " + p + " at an interest rate of " + r + "%, you will receive an amount of interest " + i + " in the year " + ys + ".";
+    a = document.getElementById("answer").innerHTML = "If you deposit " + p + " at an interest rate of " + r + "%, you will receive an amount of interest " + i + " in the year " + ys + ".";
 }
 
